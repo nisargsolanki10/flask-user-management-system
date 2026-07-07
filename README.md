@@ -18,3 +18,7 @@ A Flask-based User Management System that allows users to add, view, edit, and d
 - Store data using SQLite database
 
 ## Project Structure
+
+## Website Screenshot
+
+![Website Screenshot](screenshot.png)
