@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>User Management System</h1>
+
+        <form method="POST">
+
+            <input type="text" name="name" placeholder="Enter Name" required>
+
+            <input type="email" name="email" placeholder="Enter Email" required>
+
+            <input type="number" name="age" placeholder="Enter Age" required>
+
+            <button type="submit">Add User</button>
+
+        </form>
+
+
+        <h2>Saved Users</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+
+
+            {% for user in users %}
+
+            <tr>
+
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+                <td>{{ user[3] }}</td>
+
+                <td>
+                    <a class="edit" href="/edit/{{user[0]}}">Edit</a>
+                    <a class="delete" href="/delete/{{user[0]}}">Delete</a>
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</body>
+</html>
