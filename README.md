@@ -6,7 +6,9 @@
 
 ## Project Description
 
-A Flask-based User Management System that allows users to add, view, edit, and delete user information. This project demonstrates the integration of frontend, backend, and database technologies in a full stack web application.
+A Flask-based User Management System that allows users to add, view, edit, delete, search, and export user information.
+
+This project demonstrates a complete full-stack web application using Flask for backend development, SQLite for database management, and HTML/CSS with Bootstrap for the user interface.
 
 ## Technologies Used
 
@@ -15,15 +17,23 @@ A Flask-based User Management System that allows users to add, view, edit, and d
 * SQLite
 * HTML
 * CSS
+* Bootstrap
 * Render (Deployment)
 * Git & GitHub
 
 ## Features
 
 * Add new users
-* Display user details in a table
+* Display users in a table
 * Edit existing users
 * Delete users
+* Search users by name or email
+* Duplicate email validation
+* Dashboard statistics
+    * Total users count
+    * Average user age
+    * Latest registered user
+* Export user data as CSV file
 * Store data using SQLite database
 * Responsive and user-friendly interface
 
@@ -41,44 +51,3 @@ flask-user-management-system/
 └── templates/
     ├── index.html
     └── edit.html
-```
-
-## Website Screenshot
-
-![Website Screenshot](screenshot.png)
-
-## How to Run the Project Locally
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/nisargsolanki10/flask-user-management-system.git
-```
-
-2. Navigate to the project folder:
-
-```bash
-cd flask-user-management-system
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Run the Flask application:
-
-```bash
-python app.py
-```
-
-5. Open your browser and visit:
-
-```text
-http://127.0.0.1:5000
-```
-
-## Author
-
-Nisarg Solanki
